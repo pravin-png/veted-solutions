@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-border-gray: #E9ECEF;
+  --color-electric-blue: #0057FF;
+  --color-vivid-orange: #FF8200;
+  --color-deep-charcoal: #090909;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-white: #FFFFFF;
+  --color-surface: #f8f9fa;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-variant: #e1e3e4;
+  --color-outline: #747878;
+}
+
+@layer utilities {
+  .technical-grid-bg {
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #E9ECEF 1px, transparent 1px);
+  }
+  .text-shadow-subtle {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-deep-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
